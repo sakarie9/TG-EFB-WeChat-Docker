@@ -1,30 +1,25 @@
 # TG-EFB-Wechat-Docker
 
-EFB-WeChat的Docker Compose部署方式
+EFB-WeChat的Docker部署方式
 
 ## 使用
 
-### 克隆项目
+### 配置
+
+根据提示进行配置，`/root/wechat/config`为配置文件目录
 
 ```bash
-# 克隆
-git clone https://github.com/xzsk2/TG-EFB-WeChat-Docker.git
-# 进入文件夹
-cd TG-EFB-WeChat-Docker
+docker run --rm -it --name="efb-wechat" -v /root/wechat/config:/app/config xzsk2/efb-wechat-docker:latest efb-wizard
 ```
-
-### 修改配置文件
-
-
 
 ### 运行
 
 ```bash
-docker-compose up -d
+docker run -d --restart=always --name="efb-wechat" -v /root/wechat/config:/app/config xzsk2/efb-wechat-docker:latest
 ```
 
 ### 停止
 
 ```bash
-docker-compose down
+docker contianer stop efb-wechat
 ```
