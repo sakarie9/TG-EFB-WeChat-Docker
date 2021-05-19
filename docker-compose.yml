@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+
+    efb-wechat:
+        container_name: efb
+        build: .
+        restart: unless-stopped
+        volumes:
+            - ./efb-wechat:/app/config
