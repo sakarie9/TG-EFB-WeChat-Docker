@@ -21,5 +21,5 @@ docker run -d --restart=always --name="efb-wechat" -v /root/wechat/config:/app/c
 ### 停止
 
 ```bash
-docker contianer stop efb-wechat
+docker container stop efb-wechat
 ```
