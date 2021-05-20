@@ -18,6 +18,12 @@ docker run --rm -it --name="efb-wechat" -v /root/wechat/config:/app/config xzsk2
 docker run -d --restart=always --name="efb-wechat" -v /root/wechat/config:/app/config xzsk2/efb-wechat-docker:latest
 ```
 
+### 登录
+
+```bash
+docker logs efb-wechat
+```
+
 ### 停止
 
 ```bash

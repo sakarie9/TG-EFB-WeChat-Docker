@@ -1,4 +1,5 @@
 ehforwarderbot
 efb-telegram-master
 git+https://github.com/ehForwarderBot/efb-wechat-slave#egg=efb-wechat-slave
+git+https://github.com/zhangzhishan/efb-filter-middleware#egg=efb-filter-middleware
 python-telegram-bot[socks]
